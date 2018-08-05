@@ -1,0 +1,8 @@
+.c-button {
+  background: blue;
+  border: 1px solid red;
+  color: rgb(0, 255, 55);
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

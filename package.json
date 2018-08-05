@@ -1,0 +1,30 @@
+{
+  "name": "storybook-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@storybook/addon-a11y": "^4.0.0-alpha.14",
+    "@storybook/addon-actions": "^4.0.0-alpha.14",
+    "@storybook/addon-backgrounds": "^4.0.0-alpha.14",
+    "@storybook/addon-centered": "^4.0.0-alpha.14",
+    "@storybook/addon-jest": "^4.0.0-alpha.14",
+    "@storybook/addon-knobs": "^4.0.0-alpha.14",
+    "@storybook/addon-notes": "^4.0.0-alpha.14",
+    "@storybook/addon-storysource": "^4.0.0-alpha.14",
+    "@storybook/addon-viewport": "^4.0.0-alpha.14",
+    "@storybook/addons": "^3.3.0",
+    "@storybook/html": "^4.0.0-alpha.11",
+    "moment": "^2.22.2",
+    "twig": "^1.12.0",
+    "twig-loader": "^0.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": "",
+  "license": "ISC"
+}
