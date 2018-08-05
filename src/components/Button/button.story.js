@@ -7,7 +7,7 @@ import { text } from '@storybook/addon-knobs';
 import results from '../../../.jest-test-results.json';
 
 import button from './button.twig';
-import '../../js/app.js';
+import './button.js';
 import './button.css';
 
 const markdown = `
@@ -26,7 +26,7 @@ storiesOf('Button', module)
   .addDecorator(withStorySource(button()))
   .addDecorator(withActions('click .js-button'))
   .addDecorator(withMarkdownNotes(markdown))
-  // .addDecorator(withTests({results})('button'))
+  .addDecorator(withTests({results})('button'))
   .add('button', () => {
     const label = text('Label', 'Button label');
     return button({ data: { label } });
